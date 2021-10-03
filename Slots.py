@@ -1,10 +1,9 @@
 #from CasinoGames import CasinoGamesBaseCMDS
 from discord.ext import commands
+from CasinoGamesCog import CasinoGamesBaseCog
 
-from CasinoGames import CasinoGamesBaseCMDS
 
-
-class Slots(CasinoGamesBaseCMDS, name="slotsCog"):
+class Slots(CasinoGamesBaseCog, name="slotsCog"):
     def __init__(self, bot):
         print("Slots Intialized")
         super().__init__(bot)
@@ -23,7 +22,7 @@ class Slots(CasinoGamesBaseCMDS, name="slotsCog"):
      await ctx.send("Hook up PT strings and formating")
 
    
-    @commands.command(name="joinslots")
+    @commands.command(name="startslot")
     async def joinslots(self, ctx):
      super().casinogametable.append(ctx.author)   
      #print(ctx.author)
@@ -31,9 +30,12 @@ class Slots(CasinoGamesBaseCMDS, name="slotsCog"):
      await ctx.send("Hook funcanilty for joing active seesion")
 
 
+    '''
     @commands.command(name="stopslots")
     async def stopslot(self, ctx):
      await ctx.send("Hook up funcintailty to stop all slot games")
+    '''
+
 
     @commands.command(name="leaveslots")
     async def leaveslot(self, ctx):

@@ -2,7 +2,8 @@
 from discord.ext import commands
 
 #class CasinoGamesBaseCMDS(commands.Cog, name = 'CbaseCMDMod' ):
-class CasinoGamesBaseCMDS(commands.Cog, name ='casompgamesBaseCog'): 
+
+class CasinoGamesBaseCog(commands.Cog, name ='casompgamesBaseCog'): 
     #connection =mysql.connector.connect()
     #clientInfo = discord.client()
 

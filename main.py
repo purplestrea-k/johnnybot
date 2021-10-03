@@ -1,6 +1,6 @@
 from Slots import Slots
-from CasinoGames import CasinoGamesBaseCMDS
 from johnny import JohnnyClient
+from CasinoGamesCog import CasinoGamesBaseCog
 import os
 
 def  main():
