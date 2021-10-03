@@ -2,15 +2,18 @@
 from discord.ext import commands
 
 #class CasinoGamesBaseCMDS(commands.Cog, name = 'CbaseCMDMod' ):
-class CasinoGamesBaseCMDS(commands.Cog):
+class CasinoGamesBaseCMDS(commands.Cog, name ='casompgamesBaseCog'): 
     #connection =mysql.connector.connect()
     #clientInfo = discord.client()
+
+    casinogametable = []
 
     
 
     
     def __init__(self,bot):
      self.bot=bot #Client vairable for holding discord information.
+#self.casinogametable = []
     # self.msg=self.client.guilds.message
      print("Casino Intilalized")
      #self.earning
@@ -24,6 +27,11 @@ class CasinoGamesBaseCMDS(commands.Cog):
     async def earn(self, ctx):
      #selfearning = self.returnbalance()
      await ctx.send(self.returnbalance())
+
+    @commands.command(name="clr")
+    async def clr(self, ctx):
+     #selfearning = self.returnbalance()
+     await ctx.send("clears all active games and deactives bot")
     
     '''
     async def on_message(self,msg):

@@ -1,3 +1,4 @@
+from Slots import Slots
 from CasinoGames import CasinoGamesBaseCMDS
 from johnny import JohnnyClient
 import os
@@ -5,9 +6,10 @@ import os
 def  main():
  bot = JohnnyClient(command_prefix='!')
  
- cogSlot = CasinoGamesBaseCMDS(bot)
+ #cogSlot = CasinoGamesBaseCMDS(bot)
  print("Reached")
- bot.add_cog(cogSlot)
+ #bot.add_cog(cogSlot)
+ bot.add_cog(Slots(bot))
 
  bot.run(os.getenv("TOKEN"))
  
