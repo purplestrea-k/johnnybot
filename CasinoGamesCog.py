@@ -1,6 +1,7 @@
 #import mysql.connector
 from discord.ext import commands
 
+
 #class CasinoGamesBaseCMDS(commands.Cog, name = 'CbaseCMDMod' ):
 
 class CasinoGamesBaseCog(commands.Cog, name ='casompgamesBaseCog'): 
@@ -32,7 +33,7 @@ class CasinoGamesBaseCog(commands.Cog, name ='casompgamesBaseCog'):
     @commands.command(name="clr")
     async def clr(self, ctx):
      #selfearning = self.returnbalance()
-     await ctx.send("clears all active games and deactives bot")
+     await ctx.send("<a:Triplebonk:489206765863567380>|<a:Triplebonk:489206765863567380>|<a:Triplebonk:489206765863567380>")
     
     '''
     async def on_message(self,msg):
